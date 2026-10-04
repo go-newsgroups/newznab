@@ -63,7 +63,7 @@ func New(baseURL, apiKey string, opts ...Option) *Client {
 type Item struct {
 	Title       string
 	GUID        string
-	NZBURL      string    // the .nzb download link (item <link> or <enclosure url>)
+	NZBURL      string // the .nzb download link (item <link> or <enclosure url>)
 	Category    string
 	Size        int64     // bytes (from newznab:attr name="size" or <enclosure length>)
 	PublishDate time.Time // <pubDate>, RFC1123Z
